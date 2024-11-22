@@ -24,6 +24,8 @@ builder.Services.AddScoped<IAerogeradorApplicationService, AerogeradorApplicatio
 
 builder.Services.AddScoped<ITorreRepository, TorreRepository>();
 builder.Services.AddScoped<ITorreApplicationService, TorreApplicationService>();
+
+builder.Services.AddSingleton<ClimaPredictionService>();
 // Add services to the container.
 
 builder.Services.AddControllers();
