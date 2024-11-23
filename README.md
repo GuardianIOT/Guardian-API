@@ -1,3 +1,11 @@
+Integrantes do Grupo:
+
+Bruno de Paula (RM552226)
+Kayque Lima (RM550782)
+Gabriel França (RM551905)
+Gabriel Francisco Lobo (RM99708)
+Edward de Lima (RM98676)
+
 # **Guardian API**
 
 Bem-vindo à **Guardian API**! Este é um projeto desenvolvido em C# com o objetivo de promover o gerenciamento de aerogeradores e parques eólicos, integrando sensores e inteligência artificial para monitoramento climático.
