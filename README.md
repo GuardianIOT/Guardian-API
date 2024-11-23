@@ -17,6 +17,7 @@ Com torres estrategicamente posicionadas, o sistema coleta dados como:
 
 Essas informações são processadas para gerar um histórico abrangente de análise de falhas e desenvolver estratégias preventivas e corretivas para manutenção.
 
+
 ## **Abordagem Monolítica**
 
 Optamos por uma arquitetura monolítica devido às seguintes vantagens:
@@ -26,6 +27,7 @@ A integração de todos os componentes dentro de um único projeto facilita a co
 
 ### **Manutenção Centralizada**
 Uma única base de código simplifica atualizações e correções, garantindo a integridade e consistência do sistema.
+
 
 ## **Design Patterns Utilizados**
 
@@ -42,3 +44,28 @@ Centraliza a lógica de negócios em serviços dedicados, deixando os controlado
 ### **3. Dependency Injection**
 Utilizado para reduzir o acoplamento entre as classes. Todas as dependências são injetadas via construtor, facilitando testes e manutenção.
 - Exemplo: Configurado em `Program.cs` com o uso do `builder.Services.AddScoped()`.
+
+
+## **Configuração do Projeto**
+
+Para executar o projeto localmente, siga estas etapas:
+
+### **1. Clonar o Repositório**
+
+```bash
+git clone https://github.com/seu-repositorio/guardian-api.git
+```
+
+### **2. Configurar a string de conexão**
+
+Certifique-se de configurar a string de conexão no arquivo Program.cs
+
+```bash
+options.UseOracle("Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521))) (CONNECT_DATA=(SERVER=DEDICATED)(SID=ORCL)));User Id=username;Password=password;");
+```
+
+### **3. Executar a API**
+
+```bash
+dotnet run
+```
